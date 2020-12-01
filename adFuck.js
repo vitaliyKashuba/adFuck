@@ -48,8 +48,8 @@ function findAds() {
 function removeAds() {
   var ads = document.getElementsByClassName('fucking-ad');
 
-  for (var i = 0; i < ads.length; i++) {
-    ads[i].remove();
+  while(ads.length > 0) {
+    ads[0].parentNode.removeChild(ads[0]);
   }
 }
 
